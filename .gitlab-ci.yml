@@ -1,0 +1,21 @@
+image: docker/compose:latest
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: "/certs"
+
+stages:
+    - build
+
+services:
+  - docker:dind
+ 
+build:
+    only: 
+      - master
+    stage: build
+    tags:
+      - iit
+      - prod
+    script:
+      - docker-compose -f docker-compose.prod.yml up -d --build
