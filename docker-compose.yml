@@ -5,8 +5,8 @@ services:
     tty: true
     container_name: react_prod
     build:
-      context: client
-      dockerfile: Dockerfile
+      context: ./client
+      dockerfile: ./Dockerfile
     ports:
       - 3001:3001
     environment:
