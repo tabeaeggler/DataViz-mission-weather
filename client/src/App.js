@@ -42,19 +42,19 @@ function App() {
       <div className="App">
         <Routes setPageNr={setGlobalNavState} />
         <div className="nav-button-container">
-          <button className="nav-button start-button" id="0" onClick={() => handleClick("/", 0)}>
+          <button className="nav-button start-button" id="0" onClick={() => handleClick(process.env.PUBLIC_URL, 0)}>
             <span className="start-button-text">{t("Navigation.1")}</span>
           </button>
-          <button className="nav-button" id="1" onClick={() => handleClick("/Map", 1)}>
+          <button className="nav-button" id="1" onClick={() => handleClick(process.env.PUBLIC_URL + "/map", 1)}>
             1
           </button>
-          <button className="nav-button" id="2" onClick={() => handleClick("/Datepicker", 2)}>
+          <button className="nav-button" id="2" onClick={() => handleClick(process.env.PUBLIC_URL + "/datepicker", 2)}>
             2
           </button>
-          <button className="nav-button" id="3" onClick={() => handleClick("/Weather", 3)}>
+          <button className="nav-button" id="3" onClick={() => handleClick(process.env.PUBLIC_URL + "/weather", 3)}>
             3
           </button>
-          <button className="nav-button" id="4" onClick={() => handleClick("/Climate", 4)}>
+          <button className="nav-button" id="4" onClick={() => handleClick(process.env.PUBLIC_URL + "/climate", 4)}>
             4
           </button>
           <button className="nav-button end-button" id="5" onClick={() => handleClick("/End", 5)}>

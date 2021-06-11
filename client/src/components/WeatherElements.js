@@ -26,7 +26,7 @@ const WeatherElements = props => {
   const handleClose = () => {
     setError(false)
     props.setPageNr(2)
-    history.push("/Datepicker")
+    history.push(process.env.PUBLIC_URL + "/datepicker")
   }
 
   /**
@@ -40,7 +40,7 @@ const WeatherElements = props => {
           <button
             onClick={() => {
               props.setPageNr(4)
-              history.push("/Climate")
+              history.push(process.env.PUBLIC_URL + "/climate")
             }}>
             <img src={ButtonRight} alt="continue"></img>
           </button>
@@ -60,7 +60,7 @@ const WeatherElements = props => {
           <button
             onClick={() => {
               props.setPageNr(2)
-              history.push("/Datepicker")
+              history.push(process.env.PUBLIC_URL + "/datepicker")
             }}>
             <img src={ButtonLeft} alt="continue"></img>
           </button>

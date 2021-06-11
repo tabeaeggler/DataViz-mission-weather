@@ -27,7 +27,7 @@ const WeatherClimate = props => {
           <button
             onClick={() => {
               props.setPageNr(5)
-              history.push("/End")
+              history.push(process.env.PUBLIC_URL + "/end")
             }}>
             <img src={ButtonRight} alt="continue"></img>
           </button>
@@ -47,7 +47,7 @@ const WeatherClimate = props => {
           <button
             onClick={() => {
               props.setPageNr(3)
-              history.push("/Weather")
+              history.push(process.env.PUBLIC_URL + "/weather")
             }}>
             <img src={ButtonLeft} alt="continue"></img>
           </button>

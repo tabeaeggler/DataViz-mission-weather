@@ -62,7 +62,7 @@ const Map = props => {
           <button
             onClick={() => {
               props.setPageNr(2)
-              history.push("/Datepicker")
+              history.push(process.env.PUBLIC_URL + "/datepicker")
             }}>
             <img src={ButtonRight} alt="continue"></img>
           </button>
@@ -82,7 +82,7 @@ const Map = props => {
           <button
             onClick={() => {
               props.setPageNr(0)
-              history.push("/")
+              history.push(process.env.PUBLIC_URL)
             }}>
             <img src={ButtonLeft} alt="continue"></img>
           </button>

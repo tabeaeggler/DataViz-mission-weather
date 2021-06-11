@@ -53,7 +53,7 @@ const Start = props => {
           onClick={() => {
             if (!error) {
               props.setPageNr(1)
-              history.push("/Map")
+              history.push(process.env.PUBLIC_URL + "/map")
             }
           }}>
           {createAnimation()}

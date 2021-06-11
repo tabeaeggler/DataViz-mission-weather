@@ -16,12 +16,12 @@ const Routes = props => {
   return (
     <Router history={history}>
       <Switch>
-        <Route path="/" exact component={() => <Start setPageNr={props.setPageNr} />} />
-        <Route path="/Map" exact component={() => <Map setPageNr={props.setPageNr} />} />
-        <Route path="/Datepicker" exact component={() => <Datepicker setPageNr={props.setPageNr} />} />
-        <Route path="/Weather" exact component={() => <WeatherElements setPageNr={props.setPageNr} />} />
-        <Route path="/Climate" exact component={() => <WeatherClimate setPageNr={props.setPageNr} />} />
-        <Route path="/End" exact component={() => <End setPageNr={props.setPageNr}/>} />
+        <Route path={process.env.PUBLIC_URL} exact component={() => <Start setPageNr={props.setPageNr} />} />
+        <Route path={process.env.PUBLIC_URL + "/map"} exact component={() => <Map setPageNr={props.setPageNr} />} />
+        <Route path={process.env.PUBLIC_URL + "/datepicker"} exact component={() => <Datepicker setPageNr={props.setPageNr} />} />
+        <Route path={process.env.PUBLIC_URL + "/weather"} exact component={() => <WeatherElements setPageNr={props.setPageNr} />} />
+        <Route path={process.env.PUBLIC_URL + "/climate"} exact component={() => <WeatherClimate setPageNr={props.setPageNr} />} />
+        <Route path={process.env.PUBLIC_URL + "/end"} exact component={() => <End setPageNr={props.setPageNr}/>} />
       </Switch>
     </Router>
   )

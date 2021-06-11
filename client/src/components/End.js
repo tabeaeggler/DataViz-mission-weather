@@ -30,7 +30,7 @@ const End = props => {
           <button
             onClick={() => {
               props.setPageNr(3)
-              history.push("/Climate")
+              history.push(process.env.PUBLIC_URL + "/climate")
             }}>
             <img src={ButtonLeft} alt="continue"></img>
           </button>
@@ -116,7 +116,7 @@ const End = props => {
           <button
             onClick={() => {
               props.setPageNr(0)
-              history.push("/")
+              history.push(process.env.PUBLIC_URL)
             }}
             className="go-to-start-button">
             {t("End.2")}

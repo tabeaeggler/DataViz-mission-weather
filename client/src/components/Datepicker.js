@@ -25,7 +25,7 @@ const Datepicker = props => {
           <button
             onClick={() => {
               props.setPageNr(3)
-              history.push("/Weather")
+              history.push(process.env.PUBLIC_URL + "/weather")
             }}>
             <img src={ButtonRight} alt="continue"></img>
           </button>
@@ -45,7 +45,7 @@ const Datepicker = props => {
           <button
             onClick={() => {
               props.setPageNr(1)
-              history.push("/Map")
+              history.push(process.env.PUBLIC_URL + "/map")
             }}>
             <img src={ButtonLeft} alt="continue"></img>
           </button>
