@@ -20,4 +20,4 @@ build:
     script:
         - docker build -t app/mission-wetter .
         - docker stop mission-wetter || true
-        - docker run -d -p 3000:4000 --rm --name mission-wetter app/mission-wetter
+        - docker run -d -p 3000:3001 --rm --name mission-wetter app/mission-wetter
