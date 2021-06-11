@@ -3,7 +3,7 @@ services:
   react:
     stdin_open: true 
     tty: true
-    container_name: react_prod
+    container_name: react_pro
     build:
       context: client
       dockerfile: client/Dockerfile
