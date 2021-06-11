@@ -1,0 +1,103 @@
+{
+  "Navigation": {
+    "1": "Start",
+    "2": "End"
+  },
+  "Timeout_Popup": {
+    "1": "Due to inactivity, you will be back on the homepage in 10 seconds.",
+    "2": "Stay on the current page"
+  },
+  "Error": {
+    "1": "Meteo Switzerland's weather data is currently unavailable.",
+    "2": "OK, I'll try again"
+  },
+  "Weather_Title": {
+    "1": "- This corresponds to ",
+    "2": " days in the area ",
+    "3": "Your experienced weather since your birth"
+  },
+  "Weather_Source": "Meteo Swiss",
+  "Weather_Elements": {
+    "1": "Heat days",
+    "2": "Sunny days.",
+    "3": "Snow days.",
+    "4": "Rainy days.",
+    "5": "Average temperature"
+  },
+  "Weather_Description": {
+    "1": "= temperature rises above 30°C",
+    "2": "= sun has appeared at least once",
+    "3": "= it snowed at least once",
+    "4": "= min. 2mm precipitation",
+    "5": "= average of all temperatures"
+  },
+  "Weather_Elements_Bubble": {
+    "1": "Weather is what we experience daily: sun, snow, rain etc. ",
+    "2": "These weather elements are measured with a measuring station from Meteo Switzerland. In your case the elements of the weather were taken from the following station(s): ",
+    "3": ". ",
+    "4": "On the next page you will find out what the weather is called over a longer period of time."
+  },
+  "Weather_Climate_Title": {
+    "1": "Weather vs. Climate",
+    "2": "- Weather is short-term and climate is long-term -"
+  },
+  "Weather_Climate_Bubble": {
+    "1": "The average weather over a period of time is called climate.",
+    "2": " The World Meteorological Organization refers to a 30-year period as the climate. "
+  },
+  "Weather_Climate_Graph": {
+    "1": "Weather",
+    "2": "(short-term)",
+    "3": "Climate",
+    "4": "(long-term)"
+  },
+  "Start": {
+    "1": "Sunchild or earthworm?",
+    "2": "- Discover in 4 steps your experienced weather -"
+  },
+  "End": {
+    "1": "- You are an earthworm because you have experienced more rainy days! -",
+    "2": "Back to the start"
+  },
+  "Map_Title": {
+    "1": "Experience your weather",
+    "2": "- What region do you live in? -",
+    "3": "- When were you born? -",
+    "4": "Reference station(s):"
+  },
+  "Map_Region_Stations": {
+    "1": "Altdorf, Lucerne",
+    "2": "Chur, Bad Ragaz.",
+    "3": "Davos, Samedan",
+    "4": "Bern-Zollikofen, Meiringen",
+    "5": "Zurich Fluntern",
+    "6": "Basel-Binningen",
+    "7": "Geneva (Cointrin & Observatoire), Montreux-Clarens",
+    "8": "Lugano"
+  },
+  "Map_Region": {
+    "1": "Central Switzerland",
+    "2": "Eastern Switzerland",
+    "3": "Eastern Switzerland Mountain Region",
+    "4": "Midlands",
+    "5": "Zurich",
+    "6": "Northwestern Switzerland",
+    "7": "Lake Geneva Region",
+    "8": "Ticino"
+  },
+  "Map_Bubble": {
+    "1": "Select your residential region and go to the next page.",
+    "2": "Selected region: "
+  },
+  "Datepicker_Bubble": {
+    "1": "Select your date of birth and continue.",
+    "2": "Selected date of birth: "
+  },
+  "End_Modal": {
+    "1": "Bachelor Thesis - Mission Climate and Weather",
+    "2": "Project team",
+    "3": "Supervisors",
+    "4": "Customer",
+    "5": "Verkehrshaus Lucerne"
+  }
+}

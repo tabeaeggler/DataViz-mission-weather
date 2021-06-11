@@ -1,0 +1,406 @@
+/*map*/
+.canton-button {
+  background-color: #2d2d2e;
+  color: #bbb9b9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  font-size: 12pt;
+}
+
+.map-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -280px;
+  margin-top: -130px;
+}
+
+.button-container {
+  position: relative;
+  width: 527px;
+  height: 100%;
+}
+
+.init-selected {
+  background-color: #40b79b;
+  color: #2d2d2e;
+}
+
+.selected-region,
+.selected-date {
+  color: #40b79b;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.input-bubble-subtitle {
+  font-size: 13pt;
+}
+
+.input-bubble-title {
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: left;
+  margin-top: 0;
+}
+
+.input-bubble {
+  position: absolute;
+  left: 50%;
+  margin-left: 150px;
+  width: 290px;
+  margin-top: 170px;
+  top: 50%;
+  text-align: center;
+}
+
+/*date picker*/
+.input-bubble-date {
+  width: 250px;
+  margin-left: 200px;
+  margin-top: 130px;
+}
+
+.datepicker-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -175.5px;
+  margin-top: -20px;
+}
+
+.react-date-picker {
+  display: block !important;
+}
+.react-date-picker__wrapper {
+  background-color: #2d2d2e !important;
+  color: #bbb9b9 !important;
+  margin-bottom: 0px !important;
+  border-radius: 15px !important;
+  font-size: 0.8em !important;
+  line-height: 1 !important;
+  padding: 10px 20px !important;
+  border: none !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #bbb9b9 !important;
+}
+
+.react-date-picker__inputGroup__input,
+.react-date-picker__inputGroup__leadingZero {
+  font-size: 18px !important;
+  width: auto !important;
+}
+
+.react-date-picker__inputGroup {
+  width: 245px !important;
+}
+
+.react-date-picker__calendar,
+.react-date-picker__calendar--open {
+  top: 110% !important;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-size: 14px !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-size: 14px !important;
+}
+
+.react-date-picker__inputGroup__divider {
+  padding: 0 8px 0 0 !important;
+}
+
+.react-calendar {
+  background-color: #2d2d2e !important;
+  border-radius: 15px !important;
+  border: none !important;
+}
+
+.react-calendar__tile--active,
+.react-calendar__tile--hasActive {
+  background-color: #40b79b !important;
+  color: #2d2d2e !important;
+  border-radius: 50% !important;
+}
+
+.react-calendar__tile {
+  font-size: 14px !important;
+  padding: 16px 0 !important;
+}
+
+.react-calendar__tile,
+.react-date-picker__inputGroup__input,
+.react-calendar__navigation__label,
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__next2-button {
+  color: #bbb9b9;
+}
+
+.react-date-picker__button__icon {
+  stroke: #bbb9b9 !important;
+}
+
+.react-calendar__tile:hover,
+.react-calendar__tile--now {
+  background-color: #bbb9b9 !important;
+  color: #2d2d2e !important;
+  border-radius: 50% !important;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #2d2d2e !important;
+}
+
+.react-calendar__navigation button[disabled] {
+  color: #2d2d2e !important;
+}
+
+.react-calendar__navigation button[disabled],
+.canton-button.react-calendar__tile--now,
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  color: #bbb9b9 !important;
+  background-color: #2d2d2e !important;
+}
+
+.react-calendar__tile:disabled {
+  color: #2d2d2e !important;
+  background-color: #2d2d2e !important;
+}
+
+.react-date-picker__button:enabled:hover .react-date-picker__button__icon,
+.react-date-picker__button:enabled:focus .react-date-picker__button__icon {
+  stroke: #40b79b !important;
+}
+
+.react-calendar__navigation {
+  margin-bottom: 0 !important;
+}
+
+.react-calendar__navigation__arrow,
+.react-calendar__month-view__days,
+.react-calendar__tile,
+.react-calendar__month-view__days__day,
+.react-calendar__month-view__days__day--weekend,
+.react-calendar__month-view__days__day--neighboringMonth {
+  border-radius: 50% !important;
+}
+
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__next-button {
+  font-size: 34px;
+}
+
+.react-calendar__navigation {
+  height: 65px !important;
+}
+
+::selection {
+  background: none !important;
+}
+
+::-moz-selection {
+  background: none !important;
+}
+
+:focus {
+  outline: none !important;
+}
+
+*:focus {
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+  -ms-touch-action: manipulation !important;
+  touch-action: manipulation !important;
+}
+
+/*weather elements*/
+
+.element-wrapper,
+.graph-container {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -525px;
+  top: 50%;
+  margin-top: -100px;
+}
+
+.elements-bubble {
+  width: 430px;
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -400px;
+  left: 50%;
+  margin-left: -228px;
+}
+
+.element-title {
+  font-size: 16pt;
+}
+
+.element-container {
+  text-align: center;
+  font-weight: 700;
+  display: inline-block;
+  width: 210px;
+}
+
+.element-text-container {
+  margin-top: 30px;
+}
+
+.element-description {
+  display: inline-block;
+  font-size: 9.5pt;
+  margin-top: 10px;
+  width: 130px;
+  font-weight: 300;
+}
+
+.heatdays {
+  color: #d37b61;
+}
+
+.cleardays {
+  color: #f8d763;
+}
+
+.snowdays {
+  color: #fffbfb;
+}
+
+.raindays {
+  color: #6a8adf;
+}
+
+.mean {
+  color: #d14aa7;
+}
+
+/*weather vs climate graph*/
+.weather-cell-container {
+  display: inline-block;
+  padding: 5px;
+}
+
+.graph-container {
+  margin-left: -450px;
+  text-align: left;
+  margin-top: -175px;
+}
+
+@keyframes bg {
+  50% {
+    background-size: 0 0px, 0px 0, 0 0px, 0px 0;
+  }
+  60% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+  70% {
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
+  }
+  80% {
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
+  }
+  90% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
+  }
+  100% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  }
+}
+
+div.weather-cell-0 {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%), linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%);
+  background-size: 0 0px, 0px 0, 0 0px, 0px 0;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: bg 6s linear 1;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.fade-weather-text-appear {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fade-weather-text-appear-done {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 1.1s ease-in, opacity 1.5s ease-in;
+}
+
+.description-text-container-weather {
+  text-align: left;
+  margin-left: -30px;
+}
+
+.description-text-container-climate {
+  text-align: center;
+}
+
+.description-text-weather,
+.description-text-climate {
+  width: 87px;
+  font-size: 16pt;
+  font-weight: 700;
+  line-height: 10pt;
+  text-align: center;
+  display: inline-block;
+}
+
+.description-text-climate {
+  margin-top: 0;
+}
+
+.subtitle-description-text {
+  font-size: 10pt;
+  font-weight: 400;
+}
+
+svg.arrow {
+  animation: svg-anim 3s linear 1;
+  animation-delay: 7s;
+  animation-play-state: running;
+}
+
+@keyframes svg-anim {
+  0% {
+    width: 50px;
+  }
+  25% {
+    width: 360px;
+  }
+  50% {
+    width: 540px;
+  }
+  75% {
+    width: 720px;
+  }
+  100% {
+    width: 900px;
+  }
+}
+
+.fade-arrow-appear {
+  visibility: hidden;
+}
+
+.fade-arrow-appear-done {
+  visibility: visible;
+}
+
+.arrow-container {
+  padding-top: 270px;
+}

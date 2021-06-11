@@ -1,0 +1,103 @@
+{
+  "Navigation": {
+    "1": "Start",
+    "2": "Fine"
+  },
+  "Timeout_Popup": {
+    "1": "A causa dell'inattività, tornerai sulla homepage tra 10 secondi.",
+    "2": "Rimanere su questa pagina"
+  },
+  "Error": {
+    "1": "I dati meteorologici di Meteo Svizzera non sono attualmente disponibili",
+    "2": "OK, ci riprovo"
+  },
+  "Weather_Title": {
+    "1": "- Questo corrisponde a ",
+    "2": " giorni nella zona ",
+    "3": "La vostra esperienza meteorologica dalla nascita"
+  },
+  "Weather_Source": "Meteo Svizzera",
+  "Weather_Elements": {
+    "1": "Giorni di caldo",
+    "2": "Giorni di sole",
+    "3": "Giornate di neve",
+    "4": "Giorni di pioggia",
+    "5": "Temperatura media"
+  },
+  "Weather_Description": {
+    "1": "= la temperatura supera i 30°C",
+    "2": "= il sole è apparso almeno una volta",
+    "3": "= ha nevicato almeno una volta",
+    "4": "= min. 2mm di precipitazione",
+    "5": "= media di tutte le temperature"
+  },
+  "Weather_Elements_Bubble": {
+    "1": "Il tempo è quello che viviamo ogni giorno: sole, neve, pioggia, ecc. ",
+    "2": "Questi elementi meteorologici vengono misurati con una stazione di misura di Meteo Svizzera. Nel vostro caso gli elementi del meteo sono stati presi dalla/e seguente/i stazione/i: ",
+    "3": ". ",
+    "4": "Nella pagina successiva scoprirete come si chiama il tempo per un periodo di tempo più lungo."
+  },
+  "Weather_Climate_Title": {
+    "1": "Meteo vs. Clima",
+    "2": "- Il tempo è a breve termine e il clima è a lungo termine -"
+  },
+  "Weather_Climate_Bubble": {
+    "1": "Il tempo medio in un periodo di tempo si chiama clima.",
+    "2": " L'Organizzazione Meteorologica Mondiale si riferisce ad un periodo di 30 anni come al clima"
+  },
+  "Weather_Climate_Graph": {
+    "1": "Meteo",
+    "2": "(breve termine)",
+    "3": "Clima",
+    "4": "(lungo termine)"
+  },
+  "Start": {
+    "1": "Sole bambino o lombrico?",
+    "2": "- Scoprite in 4 passi il vostro tempo esperto -"
+  },
+  "End": {
+    "1": "- Sei un lombrico perché hai vissuto giorni più piovosi! -",
+    "2": "Ritorno all'inizio"
+  },
+  "Map_Title": {
+    "1": "Sperimenta il tuo tempo",
+    "2": "- In quale regione vivete? -",
+    "3": "- Quando sei nato? -",
+    "4": "Stazioni di riferimento:"
+  },
+  "Map_Region_Stations": {
+    "1": "Altdorf, Lucerna",
+    "2": "Coira, Bad Ragaz.",
+    "3": "Davos, Samedan",
+    "4": "Berna-Zollikofen, Meiringen",
+    "5": "Zurich Fluntern",
+    "6": "Basilea-Binningen",
+    "7": "Ginevra (Cointrin & Observatoire), Montreux-Clarens",
+    "8": "Lugano"
+  },
+  "Map_Region": {
+    "1": "Svizzera centrale",
+    "2": "Svizzera orientale",
+    "3": "Regione montana della Svizzera orientale",
+    "4": "Midlands",
+    "5": "Zurigo",
+    "6": "Svizzera nordoccidentale",
+    "7": "Regione del lago di Ginevra",
+    "8": "Ticino"
+  },
+  "Map_Bubble": {
+    "1": "Seleziona la tua regione di residenza e vai alla pagina successiva.",
+    "2": "Regione selezionata: "
+  },
+  "Datepicker_Bubble": {
+    "1": "Selezionare la data di nascita e continuare.",
+    "2": "Data di nascita selezionata: "
+  },
+  "End_Modal": {
+    "1": "Tesi di Laurea - Missione Clima e Meteo",
+    "2": "Team di progetto",
+    "3": "Supervisori",
+    "4": "Cliente",
+    "5": "Verkehrshaus Lucerna"
+  }
+}

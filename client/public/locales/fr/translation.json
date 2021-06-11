@@ -1,0 +1,103 @@
+{
+  "Navigation": {
+    "1": "Start",
+    "2": "Fin"
+  },
+  "Timeout_Popup": {
+    "1": "En raison de votre inactivité, vous serez de retour sur la page d'accueil dans 10 secondes.",
+    "2": "Restez sur cette page"
+  },
+  "Error": {
+    "1": "Les données météorologiques de Météo Suisse ne sont pas disponibles pour le moment",
+    "2": "OK, je vais réessayer"
+  },
+  "Weather_Title": {
+    "1": "- Cela correspond à ",
+    "2": " jours dans la zone ",
+    "3": "Votre expérience du temps depuis votre naissance"
+  },
+  "Weather_Source": "Meteo Suisse",
+  "Weather_Elements": {
+    "1": "Jours de chaleur",
+    "2": "Jours de soleil",
+    "3": "Jours de neige",
+    "4": "Jours de pluie",
+    "5": "Température moyenne"
+  },
+  "Weather_Description": {
+    "1": "= la température dépasse 30°C",
+    "2": "= le soleil est apparu au moins une fois",
+    "3": "= il a neigé au moins une fois",
+    "4": "= min. 2mm de précipitations",
+    "5": "= moyenne de toutes les températures"
+  },
+  "Weather_Elements_Bubble": {
+    "1": "Le temps, c'est ce que nous vivons tous les jours : soleil, neige, pluie, etc. ",
+    "2": "Ces éléments météorologiques sont mesurés avec une station de mesure de Météo Suisse. Dans votre cas, les éléments de la météo ont été pris à la (aux) station(s) suivante(s) : ",
+    "3": ". ",
+    "4": "Sur la page suivante, vous découvrirez comment on appelle le temps qu'il fait sur une longue période."
+  },
+  "Weather_Climate_Title": {
+    "1": "Météo contre climat",
+    "2": "- Le temps est à court terme et le climat est à long terme -"
+  },
+  "Weather_Climate_Bubble": {
+    "1": "Le temps moyen sur une période de temps est appelé climat.",
+    "2": " L'Organisation météorologique mondiale désigne une période de 30 ans comme étant le climat. "
+  },
+  "Weather_Climate_Graph": {
+    "1": "Météo",
+    "2": "(court terme)",
+    "3": "Climat",
+    "4": "(long terme)"
+  },
+  "Start": {
+    "1": "Enfant Soleil ou lombric?",
+    "2": "- Découvrez en 4 étapes votre expérience du temps -"
+  },
+  "End": {
+    "1": "- Vous êtes un ver de terre car vous avez connu plus de jours de pluie! -",
+    "2": "Retour au début"
+  },
+  "Map_Title": {
+    "1": "Faites l'expérience de votre temps",
+    "2": "- Dans quelle région habitez-vous? -",
+    "3": "- Quand êtes-vous né? -",
+    "4": "Station(s) de référence :"
+  },
+  "Map_Region_Stations": {
+    "1": "Altdorf, Lucerne",
+    "2": "Chur, Bad Ragaz.",
+    "3": "Davos, Samedan",
+    "4": "Bern-Zollikofen, Meiringen",
+    "5": "Zurich Fluntern",
+    "6": "Bâle-Binningen",
+    "7": "Genève (Cointrin & Observatoire), Montreux-Clarens",
+    "8": "Lugano"
+  },
+  "Map_Region": {
+    "1": "Suisse centrale",
+    "2": "Suisse orientale",
+    "3": "Région de montagne de la Suisse orientale",
+    "4": "Midlands",
+    "5": "Zurich",
+    "6": "Suisse du Nord-Ouest",
+    "7": "Région du lac Léman",
+    "8": "Tessin"
+  },
+  "Map_Bubble": {
+    "1": "Sélectionnez votre région de résidence et passez à la page suivante.",
+    "2": "Région sélectionnée: "
+  },
+  "Datepicker_Bubble": {
+    "1": "Sélectionnez votre date de naissance et continuez.",
+    "2": "Date de naissance choisie: "
+  },
+  "End_Modal": {
+    "1": "Thèse de Licence - Mission Climat et Météo",
+    "2": "Équipe de projet",
+    "3": "Superviseurs",
+    "4": "Client",
+    "5": "Verkehrshaus Lucerne"
+  }
+}

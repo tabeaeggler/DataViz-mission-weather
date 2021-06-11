@@ -1,0 +1,411 @@
+body {
+  font-family: "Gudea", sans-serif;
+  background-color: #141416;
+  color: #bbb9b9;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+*,
+::after,
+::before {
+  box-sizing: content-box;
+}
+
+/*stop back/forward two finger swipe*/
+html {
+  touch-action: none;
+}
+
+/*disable selection*/
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*headings and fonts*/
+h1 {
+  font-family: "Inconsolata", monospace;
+  font-size: 40pt;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: "Gudea", sans-serif;
+  font-size: 20pt;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+h6 {
+  font-size: 12pt;
+  color: white;
+  opacity: 0.2;
+  font-weight: 400 !important;
+}
+
+p {
+  font-size: 14pt;
+}
+
+b {
+  font-size: 14pt;
+}
+
+.subtitle {
+  opacity: 0.7;
+}
+
+/*source*/
+.source {
+  position: absolute;
+  right: 15px;
+  top: 0%;
+  margin-top: 35px;
+}
+
+/*start and endscreen*/
+.start-container,
+.end-text-container {
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  left: 50%;
+  margin-left: -850px;
+  width: 1700px;
+}
+
+.start-text,
+.end-text {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  font-size: 80pt;
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(0deg, #f8d763 25%, #d37b61 44.79%, #6a8adf 80.46%, #6a8adf 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.start-subtitle,
+.end-subtitle {
+  font-family: "Gudea", sans-serif;
+  font-size: 24pt;
+  color: #bbb9b9;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.end-text-container {
+  margin-top: -235px;
+  text-align: center;
+}
+
+.go-to-start-button {
+  background-color: #2d2d2e;
+  border-radius: 5px;
+  padding: 26px;
+  color: #bbb9b9;
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  margin-left: -111px;
+  font-size: 16pt;
+  font-family: "Gudea";
+  font-weight: bold;
+  width: 170px;
+}
+
+.about-title {
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-subtitle {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-text {
+  font-weight: 400;
+  text-align: center;
+}
+
+/* general button style*/
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-family: "Gudea", sans-serif;
+  font-weight: 700;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* nav and language button style*/
+button.nav-button,
+#nav-button-clicked,
+button.language-button,
+#language-button-clicked,
+.about-button {
+  font-size: 24pt;
+  font-weight: 400;
+  font-family: "Inconsolata", monospace;
+  color: #141416;
+  background-color: #bbb9b9;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.start-button,
+.end-button,
+.about-button {
+  font-size: 14pt !important;
+}
+
+#nav-button-clicked,
+#language-button-clicked,
+#about-button-clicked {
+  background-color: #d37b61;
+}
+
+.nav-button-container {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  margin-bottom: 20px;
+  height: 40px;
+  display: table;
+  text-align: center;
+}
+
+.animated-nav {
+  bottom: 45.5%;
+  z-index: 100;
+  position: absolute;
+}
+
+.language-button-container,
+.about-button-container {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  margin-bottom: 20px;
+}
+
+/*bubble text box*/
+.bubble-fade-enter {
+  opacity: 0;
+}
+
+.bubble-fade-enter-done {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.bubble-fade-exit {
+  opacity: 1;
+}
+
+.bubble-fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.bubble-box-text {
+  margin: 0;
+}
+
+.bubble-box {
+  z-index: 100;
+  position: absolute;
+  background-color: #2d2d2e;
+  height: auto;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+/*fade for titles*/
+.fade-enter,
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 4000ms;
+}
+
+/*fade with delay*/
+.fade-slow-enter,
+.fade-slow-appear {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fade-slow-enter-done {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 1s ease-in, opacity 1s ease-in;
+}
+
+/*navigation buttons*/
+.navigation-button {
+  bottom: 45.5%;
+  z-index: 100;
+  position: absolute;
+  background-color: #2d2d2e;
+  border-radius: 5px;
+  padding: 26px;
+}
+.navigation-next-button {
+  right: 0%;
+}
+
+.navigation-back-button {
+  left: 0%;
+}
+
+.show-button-enter,
+.show-button-appear {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show-button-enter-done {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 3s ease-in, opacity 3s ease-in;
+}
+
+/*modal*/
+.timeout-text {
+  font-weight: bold;
+  font-size: 18pt;
+  text-align: center;
+  padding: 15px;
+  margin-top: 80px;
+}
+
+.stay-button {
+  background-color: #2d2d2e;
+  border-radius: 5px;
+  padding: 26px;
+  color: #bbb9b9;
+  font-size: 16pt;
+  font-family: "Gudea";
+  font-weight: bold;
+  position: absolute;
+  margin-left: -156px;
+  width: 260px;
+  bottom: 60px;
+}
+
+.modal-content {
+  background-color: #202023;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.modal-dialog {
+  position: absolute;
+  bottom: 19px;
+  left: 50%;
+  margin-left: -425px;
+  background-color: #202023;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.modal-body {
+  padding: 0px 15px;
+  height: 250px;
+  width: 820px;
+}
+
+.modal-header {
+  border: none;
+  display: block;
+  padding: 15px;
+}
+
+button.close {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  z-index: 10;
+}
+
+button.close span {
+  color: #bbb9b9;
+  text-shadow: none;
+  font-size: 34pt;
+  text-align: right;
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+button.close .sr-only {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translateY(-50px);
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+}

@@ -1,0 +1,103 @@
+{
+  "Navigation": {
+    "1": "Start",
+    "2": "Ende"
+  },
+  "Timeout_Popup": {
+    "1": "Aufgrund von Inaktivität wirst du in 10 Sekunden wieder auf die Startseite gelangen.",
+    "2": "Auf dieser Seite bleiben"
+  },
+  "Error": {
+    "1": "Die Wetter-Daten von Meteo Schweiz sind momentan nicht verfügbar.",
+    "2": "OK, ich probiere es noch einmal"
+  },
+  "Weather_Title": {
+    "1": "- Dies entspricht ",
+    "2": " Tagen im Gebiet ",
+    "3": "Dein erlebtes Wetter seit deiner Geburt"
+  },
+  "Weather_Source": "Meteo Schweiz",
+  "Weather_Elements": {
+    "1": "Hitzetage",
+    "2": "Sonnentage",
+    "3": "Schneetage",
+    "4": "Regentage",
+    "5": "Mittlere Temperatur"
+  },
+  "Weather_Description": {
+    "1": "= Tagestemperatur ist >= 30 °C",
+    "2": "= Bewölkungsmittel ist < als 20%",
+    "3": "= Neuschneesumme ist >= 1 cm pro m²",
+    "4": "= Niederschlagssumme ist >= 1 mm pro m²",
+    "5": "= Durchschnitt aller Tages-Temperaturen"
+  },
+  "Weather_Elements_Bubble": {
+    "1": "Wetter ist das was wir täglich erleben: Sonne, Schnee, Regen etc. ",
+    "2": "Diese Wetterelemente werden mit einer Messstation von Meteo Schweiz gemessen. In deinem Fall wurden die Elemente des Wetters der folgenden Station/en entnommen: ",
+    "3": ". ",
+    "4": "Auf der nächsten Seite erfährst du wie das Wetter über einen längeren Zeitraum hinweg bezeichnet wird."
+  },
+  "Weather_Climate_Title": {
+    "1": "Wetter vs. Klima",
+    "2": "- Wetter ist kurzfristig und Klima ist langfristig -"
+  },
+  "Weather_Climate_Bubble": {
+    "1": " Das durchschnittliche Wetter über einen längeren Zeitraum nennt man Klima.",
+    "2": " Die Weltorganisation für Meteorologie spricht ab einer 30-jährigen Periode von Klima."
+  },
+  "Weather_Climate_Graph": {
+    "1": "Wetter",
+    "2": "(kurzfristig)",
+    "3": "Klima",
+    "4": "(langfristig)"
+  },
+  "Start": {
+    "1": "Sonnenkind oder Regenwurm?",
+    "2": "- Entdecke in 4 Schritten dein erlebtes Wetter -"
+  },
+  "End": {
+    "1": "- Du bist ein Regenwurm, weil du mehr Regentage erlebt hast! -",
+    "2": "Zurück zum Start"
+  },
+  "Map_Title": {
+    "1": "Erlebe dein Wetter",
+    "2": "- In welcher Region wohnst du? -",
+    "3": "- Wann bist du geboren? -",
+    "4": "Referenzstation(en):"
+  },
+  "Map_Region_Stations": {
+    "1": "Altdorf, Luzern",
+    "2": "Chur, Bad Ragaz",
+    "3": "Davos, Samedan",
+    "4": "Bern-Zollikofen, Meiringen",
+    "5": "Zürich-Fluntern",
+    "6": "Basel-Binningen",
+    "7": "Genève (Cointrin & Observatoire), Montreux-Clarens",
+    "8": "Lugano"
+  },
+  "Map_Region": {
+    "1": "Zentralschweiz",
+    "2": "Ostschweiz",
+    "3": "Ostschweiz Bergregion",
+    "4": "Mittelland",
+    "5": "Zürich",
+    "6": "Nordwestschweiz",
+    "7": "Genferseeregion",
+    "8": "Tessin"
+  },
+  "Map_Bubble": {
+    "1": "Wähle deine Wohnregion aus und gehe auf die nächste Seite.",
+    "2": "Ausgewählte Region: "
+  },
+  "Datepicker_Bubble": {
+    "1": "Wähle dein Geburtsdatum aus und gehe weiter.",
+    "2": "Ausgewähltes Geburtsdatum: "
+  },
+  "End_Modal": {
+    "1": "Bachelor Arbeit - Mission Klima und Wetter",
+    "2": "Projektteam",
+    "3": "Betreuende",
+    "4": "Kunde",
+    "5": "Verkehrshaus Luzern"
+  }
+}
