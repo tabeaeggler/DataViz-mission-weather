@@ -3,10 +3,10 @@ services:
   react:
     stdin_open: true 
     tty: true
-    container_name: react_pro
+    container_name: react_prod
     build:
       context: client
-      dockerfile: client/Dockerfile
+      dockerfile: Dockerfile
     ports:
       - 3001:3001
     environment:
