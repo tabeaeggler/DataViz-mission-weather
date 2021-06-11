@@ -1,0 +1,23 @@
+image: docker
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: "/certs"
+
+stages:
+    - build
+
+services:
+  - docker:dind
+ 
+build:
+    only: 
+      - master
+    stage: build
+    tags:
+      - iit
+      - prod
+    script:
+        - docker build -t app/mission-wetter .
+        - docker stop mission-wetter || true
+        - docker run -d -p 3000:3000 --rm --name mission-wetter app/mission-wetter
