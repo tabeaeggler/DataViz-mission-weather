@@ -7,7 +7,7 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN python3 -m venv venv
 RUN . venv/bin/activate
-RUN apt-get install libopenblas-dev
+RUN apt-get install libopenblas-dev build-essential libssl-dev libffi-dev python-dev
 RUN pip3 install -r requirements.txt
 
 COPY . /app
