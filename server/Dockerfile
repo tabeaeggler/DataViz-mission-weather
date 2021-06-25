@@ -8,7 +8,8 @@ WORKDIR /app
 RUN python3 -m venv venv
 RUN . venv/bin/activate
 RUN apk update
-RUN apk add libopenblas-dev build-essential libssl-dev libffi-dev python-dev
+RUN apk --no-cache add curl gcc g++
+RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 RUN pip3 install -r requirements.txt
 
 COPY . /app
