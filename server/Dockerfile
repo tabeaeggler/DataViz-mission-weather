@@ -7,7 +7,7 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN python3 -m venv venv
 RUN . venv/bin/activate
-RUN pip3 install --upgrade --force-reinstall -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 COPY . /app
 
