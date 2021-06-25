@@ -7,7 +7,7 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN python3 -m venv venv
 RUN . venv/bin/activate
-RUN pip3 install -r requirements.txt --no-cache-dir
+RUN pip3 install -r --no-cache-dir requirements.txt
 
 COPY . /app
 
