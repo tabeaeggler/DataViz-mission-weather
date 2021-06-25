@@ -7,6 +7,7 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN python3 -m venv venv
 RUN . venv/bin/activate
+RUN pip install numpy
 RUN pip install -r requirements.txt
 
 COPY . /app
