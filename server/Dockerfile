@@ -1,5 +1,6 @@
 # Install minimal Python 3.
 FROM python:3.7-alpine
+RUN pip3 install --upgrade pip
 
 # We copy just the requirements.txt first to leverage Docker cache
 COPY ./requirements.txt /app/requirements.txt
