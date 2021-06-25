@@ -1,5 +1,5 @@
 # Install minimal Python 3.
-FROM python:3.8-alpine
+FROM python:3.9-alpine
 
 # We copy just the requirements.txt first to leverage Docker cache
 COPY ./requirements.txt /app/requirements.txt
