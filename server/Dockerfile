@@ -7,7 +7,8 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN python3 -m venv venv
 RUN . venv/bin/activate
-RUN pip3 install -r --no-cache-dir requirements.txt
+RUN apt-get install libopenblas-dev
+RUN pip3 install -r requirements.txt
 
 COPY . /app
 
