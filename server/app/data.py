@@ -51,13 +51,13 @@ def get_cleaned_livedata(station):
 
     # from 2020 get every years' data from todays date (month and day)
     filenames = glob.glob(
-        f'../data/livedata/VQAA09.LSSW.20[0-9][0-9]{currentdate_without_year}0450.*')
+        f'/deployment/data/livedata/VQAA09.LSSW.20[0-9][0-9]{currentdate_without_year}0450.*')
 
     # if todays data are not available yet -> get yesterdays data
     todays_data = glob.glob(
-        f'../data/livedata/VQAA09.LSSW.{currentdate}0450.*')
+        f'/deployment/data/livedata/VQAA09.LSSW.{currentdate}0450.*')
     yesterdays_data = glob.glob(
-        f'../data/livedata/VQAA09.LSSW.{yesterdaydate}0450.*')
+        f'/deployment/data/livedata/VQAA09.LSSW.{yesterdaydate}0450.*')
     if len(todays_data) == 0 and len(yesterdays_data) > 0:
         filenames.append(yesterdays_data[0])
 
@@ -90,9 +90,9 @@ def get_cleaned_livedata(station):
 def clean_data_genferseeregion(birthdate):
     """combines data from different stations and calculates data based on birthdate and region"""
     # combine data: 1939 - 1957
-    df_geneve_observatoire = pd.read_csv('../data/genferseeregion/Geneve-Observatoire-1939-1957.txt',
+    df_geneve_observatoire = pd.read_csv('/deployment/data/genferseeregion/Geneve-Observatoire-1939-1957.txt',
                                          delim_whitespace=True, parse_dates=['time'])
-    df_montreux = pd.read_csv('../data/genferseeregion/Montreux-Clarens-1939-1957.txt',
+    df_montreux = pd.read_csv('/deployment/data/genferseeregion/Montreux-Clarens-1939-1957.txt',
                               delim_whitespace=True, parse_dates=['time'])
 
     df = pd.merge(df_geneve_observatoire, df_montreux,
@@ -100,7 +100,7 @@ def clean_data_genferseeregion(birthdate):
     df.drop(['stn_y', 'stn_x'], axis=1, inplace=True)
 
     # add data: 1958 - 2019
-    df_geneve_cointrin = pd.read_csv('../data/genferseeregion/Geneve-Cointrin-1958-2019.txt',
+    df_geneve_cointrin = pd.read_csv('/deployment/data/genferseeregion/Geneve-Cointrin-1958-2019.txt',
                                      delim_whitespace=True, parse_dates=['time'])
     df_geneve_cointrin.drop('stn', axis=1, inplace=True)
 
@@ -122,9 +122,9 @@ def clean_data_genferseeregion(birthdate):
 def clean_data_zentralschweiz(birthdate):
     """combines data from different stations and calculates data based on birthdate and region"""
     # combine data: 1939 - 2019
-    df_altdorf = pd.read_csv('../data/zentralschweiz/Altdorf-1939-2019.txt',
+    df_altdorf = pd.read_csv('/deployment/data/zentralschweiz/Altdorf-1939-2019.txt',
                              delim_whitespace=True, parse_dates=['time'])
-    df_luzern = pd.read_csv('../data/zentralschweiz/Luzern-1939-1958.txt',
+    df_luzern = pd.read_csv('/deployment/data/zentralschweiz/Luzern-1939-1958.txt',
                             delim_whitespace=True, parse_dates=['time'])
 
     df_altdorf['hns000d0'] = df_altdorf['hns000d0'].replace('-', np.nan)
@@ -148,9 +148,9 @@ def clean_data_zentralschweiz(birthdate):
 def clean_data_ostschweiz(birthdate):
     """combines data from different stations and calculates data based on birthdate and region"""
     # combine data: 1939 - 2019
-    df_chur = pd.read_csv('../data/ostschweiz/Chur-1939-2019.txt',
+    df_chur = pd.read_csv('/deployment/data/ostschweiz/Chur-1939-2019.txt',
                           delim_whitespace=True, parse_dates=['time'])
-    df_badragaz = pd.read_csv('../data/ostschweiz/Bad-Ragaz-1939-1957.txt',
+    df_badragaz = pd.read_csv('/deployment/data/ostschweiz/Bad-Ragaz-1939-1957.txt',
                               delim_whitespace=True, parse_dates=['time'])
 
     df_chur['tre200dx'] = df_chur['tre200dx'].replace('-', np.nan)
@@ -174,9 +174,9 @@ def clean_data_ostschweiz(birthdate):
 def clean_data_zürich(birthdate):
     """combines data from different stations and calculates data based on birthdate and region"""
     # combine data: 1939 - 2019
-    df_zurich_fluntern = pd.read_csv('../data/zurich/Zurich-1939-2019.txt',
+    df_zurich_fluntern = pd.read_csv('/deployment/data/zurich/Zurich-1939-2019.txt',
                                      delim_whitespace=True, parse_dates=['time'])
-    df_zurich_kloten = pd.read_csv('../data/zurich/Zurich-Kloten-2016.txt',
+    df_zurich_kloten = pd.read_csv('/deployment/data/zurich/Zurich-Kloten-2016.txt',
                                    delim_whitespace=True, parse_dates=['time'])
     df_zurich_fluntern['hns000d0'] = df_zurich_fluntern['hns000d0'].replace(
         '-', np.nan)
@@ -205,7 +205,7 @@ def clean_data_zürich(birthdate):
 def clean_data_nordwestschweiz(birthdate):
     """combines data from different stations and calculates data based on birthdate and region"""
     # data: 1939 - 2019
-    df_basel = pd.read_csv('../data/basel/Basel-1939-2019.txt',
+    df_basel = pd.read_csv('/deployment/data/basel/Basel-1939-2019.txt',
                            delim_whitespace=True, parse_dates=['time'])
     # add live data
     df_basel_livedata = get_cleaned_livedata('BAS')
@@ -223,7 +223,7 @@ def clean_data_nordwestschweiz(birthdate):
 def clean_data_tessin(birthdate):
     """combines data from different stations and calculates data based on birthdate and region"""
     # data: 1939 - 2019
-    df_lugano = pd.read_csv('../data/tessin/Lugano-1939-2019.txt',
+    df_lugano = pd.read_csv('/deployment/data/tessin/Lugano-1939-2019.txt',
                             delim_whitespace=True, parse_dates=['time'])
     # add live data: from 2020
     df_lugano_livedata = get_cleaned_livedata('LUG')
@@ -241,9 +241,9 @@ def clean_data_tessin(birthdate):
 def clean_data_mittelland(birthdate):
     """combines data from different stations and calculates data based on birthdate and region"""
     # combine data: 1939 - 2019
-    df_bern = pd.read_csv('../data/mittelland/Bern-Zollikofen-1939-2019.txt',
+    df_bern = pd.read_csv('/deployment/data/mittelland/Bern-Zollikofen-1939-2019.txt',
                           delim_whitespace=True, parse_dates=['time'])
-    df_meriringen = pd.read_csv('../data/mittelland/Meiringen-2012-2019.txt',
+    df_meriringen = pd.read_csv('/deployment/data/mittelland/Meiringen-2012-2019.txt',
                                 delim_whitespace=True, parse_dates=['time'])
 
     df_bern['nto002d0'] = df_bern['nto002d0'].replace('-', np.nan)
@@ -280,9 +280,9 @@ def clean_data_mittelland(birthdate):
 def clean_data_ostschweiz_bergregion(birthdate):
     """combines data from different stations and calculates data based on birthdate and region"""
     # combine data: 1939 - 2019
-    df_davos = pd.read_csv('../data/ostschweiz-berg/Davos_1939-2019.txt',
+    df_davos = pd.read_csv('/deployment/data/ostschweiz-berg/Davos_1939-2019.txt',
                            delim_whitespace=True, parse_dates=['time'])
-    df_samedan = pd.read_csv('../data/ostschweiz-berg/Samedan-2005-2019.txt',
+    df_samedan = pd.read_csv('/deployment/data/ostschweiz-berg/Samedan-2005-2019.txt',
                              delim_whitespace=True, parse_dates=['time'])
 
     df_davos['nto002d0'] = df_davos['nto002d0'].replace('-', np.nan)
