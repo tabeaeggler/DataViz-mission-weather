@@ -14,6 +14,7 @@ RUN pip3 install -r requirements.txt
 
 COPY . /deployment
 EXPOSE 5000
-CMD ["python", "/app/api.py"]
+ENTRYPOINT ["python"]
+CMD ["/deployment/app/api.py"]
 
 #CMD ["flask", "run"]
