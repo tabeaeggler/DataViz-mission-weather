@@ -63,7 +63,7 @@ def download_data_multiprocessing():
         rf"^VQAA09.LSSW.{yesterdays_date}0450.*$")
 
     current_dict = os.getcwd()
-    os.chdir("../data/livedata")
+    os.chdir("/deployment/data/livedata")
     for f in ftp.nlst():
         if pattern_today.match(f) or pattern_yesterday.match(f):
             fhandle = open(f, 'wb')
