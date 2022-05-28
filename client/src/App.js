@@ -57,7 +57,7 @@ function App() {
           <button className="nav-button" id="4" onClick={() => handleClick(process.env.PUBLIC_URL + "/climate", 4)}>
             4
           </button>
-          <button className="nav-button end-button" id="5" onClick={() => handleClick("/End", 5)}>
+          <button className="nav-button end-button" id="5" onClick={() => handleClick(process.env.PUBLIC_URL + "/end", 5)}>
             {t("Navigation.2")}
           </button>
         </div>
