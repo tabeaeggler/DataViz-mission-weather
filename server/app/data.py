@@ -207,12 +207,18 @@ def clean_data_nordwestschweiz(birthdate):
     # data: 1939 - 2019
     df_basel = pd.read_csv('/deployment/data/basel/Basel-1939-2019.txt',
                            delim_whitespace=True, parse_dates=['time'])
+    df_basel.columns = df_basel.columns.str.replace('stn', 'Station/Location')
+    df_basel.columns = df_basel.columns.str.replace('time', 'Date')
+
     # add live data
     df_basel_livedata = get_cleaned_livedata('BAS')
     df = df_basel.append(df_basel_livedata)
 
     # handle nan values
+    df = df.astype({"hns000d0": float, "nto002d0": float, "rre150d0": float, "tre200d0": float, "tre200dx": float})
     df = handle_missing_values(df)
+    df = df.drop_duplicates().reset_index()
+
 
     # filter data for speicifc user (region and birtdate)
     filtered_result = filter_data(df, birthdate)
