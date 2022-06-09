@@ -1,6 +1,4 @@
- 
-
-stn    time           nto002d0  tre200dx  tre200d0  hns000d0  rre150d0
+Station/Location    Date           nto002d0  tre200dx  tre200d0  hns000d0  rre150d0
 BAS    19390101              0       7.8       4.0         0       1.1
 BAS    19390102              0       8.3       4.4         0       3.1
 BAS    19390103              0       4.0       2.2         0       0.3
