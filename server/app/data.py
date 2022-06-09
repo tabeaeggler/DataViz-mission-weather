@@ -213,9 +213,9 @@ def clean_data_nordwestschweiz(birthdate):
     df = df_basel.append(df_basel_livedata)
 
     # handle nan values
-    #df = df.astype({"hns000d0": float, "nto002d0": float, "rre150d0": float, "tre200d0": float, "tre200dx": float})
+    df = df.astype({"hns000d0": float, "nto002d0": float, "rre150d0": float, "tre200d0": float, "tre200dx": float})
     df = handle_missing_values(df)
-    #df = df.drop_duplicates().reset_index()
+    df = df.drop_duplicates().reset_index()
 
 
     # filter data for speicifc user (region and birtdate)
