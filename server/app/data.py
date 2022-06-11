@@ -40,26 +40,20 @@ def handle_missing_values(df):
     # replace nan values (-)
     df = df.replace('-', np.nan)
 
+    # sort df and drop duplicates
+    df = df.astype({"hns000d0": float, "nto002d0": float, "rre150d0": float, "tre200d0": float, "tre200dx": float})
+    df = df.drop_duplicates().reset_index()
+    df = df.sort_values(by=['time'], ascending=False)
+
     return df
 
 
 def get_cleaned_livedata(station):
     """returns cleaned dataframe with livedata (from 01.01.2020) from a specific station"""
-    currentdate = datetime.today().strftime('%Y%m%d')
-    yesterdaydate = (datetime.now() - timedelta(days=1)).strftime('%Y%m%d')
-    currentdate_without_year = datetime.today().strftime('%m%d')
-
     # from 2020 get every years' data from todays date (month and day)
-    filenames = glob.glob(
-        f'/deployment/data/livedata/VQAA09.LSSW.20[0-9][0-9]{currentdate_without_year}0450.*')
-
-    # if todays data are not available yet -> get yesterdays data
-    todays_data = glob.glob(
-        f'/deployment/data/livedata/VQAA09.LSSW.{currentdate}0450.*')
-    yesterdays_data = glob.glob(
-        f'/deployment/data/livedata/VQAA09.LSSW.{yesterdaydate}0450.*')
-    if len(todays_data) == 0 and len(yesterdays_data) > 0:
-        filenames.append(yesterdays_data[0])
+    currentdate_without_year = datetime.today().strftime('%m%d')
+    filenames = glob.glob(f'/deployment/data/livedata/VQAA09.LSSW.20[0-9][0-9]{currentdate_without_year}0450.*')
+    filenames.append('/deployment/data/livedata/VQAA09.LSSW.202008050450.564')
 
     # read all files and merge them together
     df_livedata = pd.DataFrame(
@@ -74,7 +68,6 @@ def get_cleaned_livedata(station):
     # change string to datetime
     df_livedata['Date'] = pd.to_datetime(
         df_livedata['Date'], format='%Y%m%d', errors='coerce')
-    df_livedata.sort_values(by=['Date'], inplace=True, ascending=False)
 
     # clean and filter df
     df_livedata = df_livedata.loc[(
@@ -213,10 +206,7 @@ def clean_data_nordwestschweiz(birthdate):
     df = df_basel.append(df_basel_livedata)
 
     # handle nan values
-    #df = df.astype({"hns000d0": float, "nto002d0": float, "rre150d0": float, "tre200d0": float, "tre200dx": float})
     df = handle_missing_values(df)
-    df = df.drop_duplicates().reset_index()
-
 
     # filter data for speicifc user (region and birtdate)
     filtered_result = filter_data(df, birthdate)
